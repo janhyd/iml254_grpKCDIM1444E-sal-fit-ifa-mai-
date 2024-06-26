@@ -1,0 +1,283 @@
+<html>
+<head><title>group test</title>
+<link  rel="stylesheet" type="text/css" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">HOME<br>.</a>
+  <a href="about.html">ABOUT<br>US</a>
+  <a href="contem.html">CONTEMPORANEO<br>DESIGN</a>
+  <a href="scand.html">SCANDINAVIAN<br>DESIGN</a>
+  <a class="active" href="indus.html">INDUSTRIAL<br>DESIGN</a>
+  <a href="mid.html">MID<br>CENTURY</a>
+</div>
+
+<header>
+<img src="image/header.jpg" style="width:100%">
+</header>
+
+<div class="navbar">
+  <a href="indcolor.html">COLOR</a>
+  <a href="indtextiles.html">TEXTILES</a>
+  <a href="indtextures.html">TEXTURES</a>
+  <a class="active" href="indfurnitures.html">FURNITURES</a>
+  <a href="">.</a>
+  <a href="">.</a>
+</div>
+
+
+<center>
+<h2>TYPES OF FURNITURES TO BUY IN INDUSTRIAL DESIGN</h2>
+</center>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('bedroom')"> Bedroom</button>
+  <button class="btn" onclick="filterSelection('living room')"> Living Room</button>
+  <button class="btn" onclick="filterSelection('dining room')"> Dining Room</button>
+  <button class="btn" onclick="filterSelection('kitchen')"> Kitchen</button>
+</div>
+
+<div class="row">
+  <div class="column bedroom">
+    <div class="content">
+      <img src="image/lloydbed.jpg"style="width:100%">
+      <h4>Lloyd Bedroom Collection</h4>
+      <p><a href="https://www.rejuvenation.com/products/lloyd-bedroom-collection/?cm_src=WsiPip1&recstrat=View-View-1%7CWVCB-GRP-AFF-QNT">
+Bed One Set</a></p>
+    </div>
+  </div>
+  <div class="column bedroom">
+    <div class="content">
+    <img src="image/ceilingfan.jpg" style="width:100%">
+      <h4>Finch LED Celing Fan</h4>
+      <p><a href="https://www.rejuvenation.com/products/finch-led-ceiling-fan/?pkey=call-fans&position=1">
+Fan with Light</a></p>
+    </div>
+  </div>
+  <div class="column bedroom">
+    <div class="content">
+    <img src="image/closet.jpg" style="width:100%">
+      <h4>Holgate 96" Modular Closet</h4>
+      <p><a href="https://www.rejuvenation.com/products/holgate-96-modular-closet/?pkey=s~wardrobe~175&position=2">
+Closet/Wardrobe</a></p>
+    </div>
+  </div>
+
+  <div class="column living room">
+    <div class="content">
+      <img src="image/cabinet.jpg" style="width:100%">
+      <h4>Cannes Storage Cabinet</h4>
+      <p><a href="https://www.rejuvenation.com/products/cannes-storage-cabinet/?pkey=call-living-room-furniture&position=22">
+Cabinet</a></p>
+    </div>
+  </div>
+  <div class="column living room">
+    <div class="content">
+    <img src="image/sofa.jpg" style="width:100%">
+      <h4>Sublimity 6-Piece Sectional Sofa with Ottoman</h4>
+      <p><a href="https://www.rejuvenation.com/products/sublimity-6-piece-sectional-sofa-with-ottoman/?pkey=call-living-room-furniture&position=37">
+Sofa</a></p>
+    </div>
+  </div>
+  <div class="column living room">
+    <div class="content">
+    <img src="image/table.jpg" style="width:100%">
+      <h4>Rocklyn Nesting Coffee Tables</h4>
+      <p><a href="https://www.rejuvenation.com/products/rocklyn-nesting-coffee-tables/?pkey=call-living-room-furniture&position=10">
+Coffee Table</a></p>
+    </div>
+  </div>
+
+ <div class="column dining room">
+    <div class="content">
+      <img src="image/diningtable.jpg" style="width:100%">
+      <h4>Shaw Dining Collection</h4>
+      <p><a href="https://www.rejuvenation.com/products/shaw-dining-collection/?pkey=call-dining-furniture&position=1">
+Dining Table</a></p>
+    </div>
+  </div>
+  <div class="column dining room">
+    <div class="content">
+    <img src="image/consoletable.jpg" style="width:100%">
+      <h4>Frances Console Table</h4>
+      <p><a href="https://www.rejuvenation.com/products/frances-console-table/?pkey=call-dining-furniture&position=16">
+Console Table</a></p>
+    </div>
+  </div>
+  <div class="column dining room">
+    <div class="content">
+    <img src="image/roundtable.jpg" style="width:100%">
+      <h4>Lennington 60" Round Dining Table</h4>
+      <p><a href="https://www.rejuvenation.com/products/lennington-60-round-dining-table/?pkey=call-dining-furniture&position=48">
+Round Table</a></p>
+    </div>
+  </div>
+
+ <div class="column kitchen">
+    <div class="content">
+      <img src="image/cabinetknob.jpg" style="width:100%">
+      <h4>Rivera 48" Under Cabinet Range Hood</h4>
+      <p><a href="https://www.rejuvenation.com/products/rivera-48-under-cabinet-range-hood/?pkey=crange-hoods&position=1">
+Cabinet Knob</a></p>
+    </div>
+  </div>
+  <div class="column kitchen">
+    <div class="content">
+    <img src="image/rack.jpg" style="width:100%">
+      <h4>Kitchen Pantry Storage</h4>
+      <p><a href="https://www.rejuvenation.com/shop/organization/kitchen-pantry-storage/">
+Rack</a></p>
+    </div>
+  </div>
+  <div class="column kitchen">
+    <div class="content">
+    <img src="image/sink.jpg" style="width:100%">
+      <h4>Descanso Hot Water Dispensing Trim & Hot Water Tank</h4>
+      <p><a href="https://www.rejuvenation.com/products/descanso-hot-water-dispensing-trim-hot-water-tank/?pkey=cwater-dispensers&position=34">
+Sink</a></p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"> top <br> <img src="icon/arrow.jpg" width="30px"></button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>

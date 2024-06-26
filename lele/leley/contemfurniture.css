@@ -1,0 +1,11 @@
+img.sticky {
+  position: -webkit-sticky;
+  position: absolute;
+  top: 0;
+  width: 400px;
+}
+</style>
+</head>
+<body>
+
+

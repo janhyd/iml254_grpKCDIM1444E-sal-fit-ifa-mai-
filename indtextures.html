@@ -1,0 +1,128 @@
+<html>
+<head><title>group test</title>
+<link  rel="stylesheet" type="text/css" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">HOME<br>.</a>
+  <a href="about.html">ABOUT<br>US</a>
+  <a href="contem.html">CONTEMPORANEO<br>DESIGN</a>
+  <a href="scand.html">SCANDINAVIAN<br>DESIGN</a>
+  <a class="active" href="indus.html">INDUSTRIAL<br>DESIGN</a>
+  <a href="mid.html">MID<br>CENTURY</a>
+</div>
+
+<header>
+<img src="image/header.jpg" style="width:100%">
+</header>
+
+<div class="navbar"> 
+  <a href="indcolor.html">COLOR</a>
+  <a href="indtextiles.html">TEXTILES</a>
+  <a class="active" href="indtextures.html">TEXTURES</a>
+  <a href="indfurnitures.html">FURNITURES</a>
+  <a href="">.</a>
+  <a href="">.</a>
+</div>
+
+<center>
+<div class="main">
+
+<h1>TYPES OF TEXTURE</h1>
+<hr>
+
+<h2>TEXTURE OF WALL AND FLOOR</h2>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="image/stonewall.jpg" style="width:100%">
+      <h3>Stone Wall</h3>
+      <p></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="image/concretewall.jpg" style="width:100%">
+      <h3>Concrete Wall</h3>
+      <p></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="image/leather.jpg" style="width:100%">
+      <h3>Leather</h3>
+      <p></p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="content">
+    <img src="image/woodtexture.jpg" style="width:80%">
+      <h3>Wood Texture</h3>
+      <p></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="image/granite.jpg" style="width:80%">
+      <h3>Granite</h3>
+      <p></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="image/darkwood.jpg" style="width:80%">
+      <h3>Dark Wood</h3>
+      <p></p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+</center>
+
+
+<div class="scroll-container">
+  <img src="image/bedroom1.jpg" width="550" height="400">
+  <img src="image/lvroom2.jpg" width="550" height="400">
+  <img src="image/dnroom3.jpg" width="550" height="400">
+  <img src="image/kitchen4.jpg" width="550" height="400">
+  <img src="image/dnroom5.jpg" width="550" height="400">
+</div>
+
+<br><br>
+<footer>
+<br><br><br>
+</footer>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"> top <br> <img src="icon/arrow.jpg" width="30px"></button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>

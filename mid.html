@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mid Century Home</title>
+<link rel="stylesheet" href="resource/css/style.css">
+</head>
+<body>
+
+<br><br><br><br>
+
+
+<br>
+<video controls width="100%" autoplay muted loop>
+<source src="resource/video/midhome1.mp4" type="video/mp4" width="100%">
+</video>
+
+
+<div class="content">
+<br><br><br><br><br><br>
+<nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contem.html">Contemporeano Design</a></li>
+            <li><a href="scand.html">Scandavian Design</a></li>
+            <li><a href="indus.html">Industrial Design</a></li>
+            <li><a href="homemid.html">Mid-Century Design</a></li>
+        </ul>
+    </nav>
+
+<div class="navbar">
+<div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Step to have your own design!   (click me)
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="colormid.html">Color</a>
+    <a href="fabricmid.html">Textiles & Fabric Choices</a>
+    <a href="texturemid.html">Textures</a>
+    <a href="furnimid.html">Furniture & Accessories</a>
+  </div>
+  </div> 
+</div>
+
+
+<center>
+<img src="resource/image/officialogo1.jpg" alt="example1" style="width:500px">
+</center>
+
+
+<br><br>
+
+<div class="container">
+<h1 align="center"><font face="Britannic Bold" color="white" size="8">~ MID - CENTURY DESIGN ~</font></h1>
+</div>
+
+<h3 align="center"><font face="FZShuTi" color="white" size="5"> spark your creativity and transform your ideas into reality!</font></h3>
+
+<br><br>
+
+<center>
+<button><h3 align="center"><a href="colormid.html"><font face="Lato" color="#000">MID-CENTURY DESIGN</font></a>
+</h3></button><br><br>
+<button><h3 align="center"><a href="index.html"><font face="Lato" color="#000">BACK TO HOMEPAGE</font></a>
+</h3></button>
+</center>
+
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+<br><br>
+
+
+
+</body>
+</html>
