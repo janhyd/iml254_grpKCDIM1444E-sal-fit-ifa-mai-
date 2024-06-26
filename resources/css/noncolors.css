@@ -1,0 +1,108 @@
+body{ background-color: #AC9362;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font family: Arial, sans-serif;
+}
+
+.cards {
+  display: inline-block;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.cards .red {
+  background-color: #F4EBE9;
+}
+
+.cards .blue {
+  background-color: #F5F2EC;
+}
+
+.cards .green {
+  background-color: #D9D5D2;
+}
+
+.cards .pink {
+  background-color: #C6D1D9;
+}
+
+.cards .cyan {
+  background-color: #C1C6CA;
+}
+
+.cards .black {
+  background-color: #89683c;
+}
+
+.cards .yellow {
+  background-color: #a08d61;
+}
+
+.cards .silver {
+  background-color: #61a598;
+}
+
+.cards .white {
+  background-color: #ddd5a4;
+}
+
+.cards .yu {
+  background-color: #F4EDE7;
+}
+
+.cards .ku {
+  background-color: #F4F1EA;
+}
+
+.cards .ju {
+  background-color: #D8CEC2;
+}
+
+.cards .lu {
+  background-color: #D5CBC1;
+}
+
+.cards .meh {
+  background-color: #D7D1D4;
+}
+
+.cards .ma {
+  background-color: #B1AEC1;
+}
+
+.cards .no {
+  background-color: #E0D5DD;
+}
+
+.cards .card {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  height: 250px;
+  width: 300px;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-size: 2.3em;
+  font-weight: 700;
+  font-align: center;
+}
+
+.cards .card:hover {
+  transform: scale(1, 1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(2px);
+  transform: scale(0.9, 0.9);
+}

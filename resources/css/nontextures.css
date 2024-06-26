@@ -1,0 +1,20 @@
+body{ background-color: #AC9362;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font family: Arial, sans-serif;
+}
+
+div.scroll-container {
+  background-color: #6D6D3F;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
